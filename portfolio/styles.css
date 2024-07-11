@@ -3,6 +3,9 @@ body, body *{
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100%;
+}
 header{
     position: fixed;
     top:0;
@@ -45,37 +48,114 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color:#DDE9F5; 
+    color:#FFCF70; 
+    background-color: #0D47A1;
 }
 #projects-head{
     font-size: 50px;
     font-family: "Merriweather", serif;
     text-align: center;
 }
-.container{
+.project-tile{
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #0D47A1;
+    background-color:  #DDE9F5;
+    border-radius: 20px;
 }
-.container a{
+.project-tile a{
     width: 600px;
     margin:0 auto;
-    color: #FFCF70;
+    color: #1168b5;
     text-decoration: none;
 }
-.container a img{
+.project-tile a img{
     width: 100%;
     border-radius: 10px;
 }
 .description{
     text-align: center;
+    font-size: 25px;
 }
+.project-tile:hover .description::before{
+    font-size: 35px;
+    font-weight: bold;
+    color: goldenrod;
+    content:" < ";
+}
+.project-tile:hover .description::after{
+    font-size: 35px;
+    font-weight: bold;
+    color: goldenrod;
+    content:" /> ";
+}
+
 #projects-boxes{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+#contacts{
+    height:100vh;
+    background-color: #3F51B5;
+    font-size: 25px;
+    width:100%;
+    color: #DDE9F5;
+    display: grid;
+    grid-template-rows: 1fr 80px;
+}
+#contact-container{
+    grid-row: 1/2;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   
+}
+#contact-container h1{
+    text-align: center;
+    font-style: italic;
+} 
+#contact-container p{
+    text-align: center;
+    margin:15px auto 30px auto;
+    font-style: italic;
+}
+.check{
+    display:flex;
+    gap:40px;
+    justify-content: center;
+    font-size: 38px;
+    flex-wrap: wrap;
+}
+.check a{
+    text-decoration: none;
+    color: #DDE9F5;
+}
+.check a:hover{
+    transform: scale(1.2);
+}
+
+.down{
+    grid-row: 2/3;
+}
+footer div{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap:10px;
+    border-top:8px solid #0D47A1;
+}
+@media only screen and (max-width:720px){
+    .project-tile a {
+        width: 60vh;
+    }
+}
+@media only screen and (max-width:480px){
+    .project-tile a {
+        width: 30vh;
+    }
 }
