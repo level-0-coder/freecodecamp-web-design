@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 body, body *{
     margin: 0;
     padding: 0;
@@ -15,6 +18,7 @@ header{
     justify-content: flex-end;
     height: 80px;
     background-color: #0D47A1;
+    z-index: 99;
 }
 #navbar{
     display: flex;
@@ -25,6 +29,9 @@ header{
     text-decoration: none;
     font-size: 20px;
     color: #DDE9F5;
+}
+#navbar a:hover{
+    background-color: #3fb5b5;
 }
 #navbar a p{
     padding:20px;
@@ -55,6 +62,7 @@ header{
     font-size: 50px;
     font-family: "Merriweather", serif;
     text-align: center;
+    margin-bottom: 30px;
 }
 .project-tile{
     padding: 30px;
@@ -65,6 +73,7 @@ header{
     margin-bottom: 20px;
     background-color:  #DDE9F5;
     border-radius: 20px;
+    transition: all 0.8s ease-in-out;
 }
 .project-tile a{
     width: 600px;
@@ -81,16 +90,18 @@ header{
     font-size: 25px;
 }
 .project-tile:hover .description::before{
-    font-size: 35px;
     font-weight: bold;
     color: goldenrod;
     content:" < ";
 }
 .project-tile:hover .description::after{
-    font-size: 35px;
     font-weight: bold;
     color: goldenrod;
     content:" /> ";
+}
+.project-tile:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 2px 3px 4px rgba(133, 186, 237, 0.769);
 }
 
 #projects-boxes{
@@ -134,6 +145,7 @@ header{
 .check a{
     text-decoration: none;
     color: #DDE9F5;
+    transition: transform 0.5s ease-in-out;
 }
 .check a:hover{
     transform: scale(1.2);
