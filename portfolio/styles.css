@@ -36,3 +36,46 @@ header{
     color: #DDE9F5;
     font-size: 50px;
 }
+
+#projects{
+    width:100%;
+}
+#projects-container{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:#DDE9F5; 
+}
+#projects-head{
+    font-size: 50px;
+    font-family: "Merriweather", serif;
+    text-align: center;
+}
+.container{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #0D47A1;
+}
+.container a{
+    width: 600px;
+    margin:0 auto;
+    color: #FFCF70;
+    text-decoration: none;
+}
+.container a img{
+    width: 100%;
+    border-radius: 10px;
+}
+.description{
+    text-align: center;
+}
+#projects-boxes{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
