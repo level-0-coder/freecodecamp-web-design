@@ -1,0 +1,76 @@
+body {
+    font-size: 20px;
+    min-width: 250px;
+  }
+  #navbar{
+    border-right:2px solid gray;
+    width:250px;
+    height: 100%;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+  }
+  #navbar .list{
+    height: 80%;
+    overflow-x:hidden;
+    overflow-y:auto;
+  }
+  #navbar header {
+    font-size:30px;
+  }
+  .option a, .option a:hover, .option a:active, .option a:visited {
+    display: block;
+  width: 100%;
+  margin:0 0;
+  padding: 25px 0;
+  border-top: 2px solid black;
+  text-decoration: none;
+  color: rgb(11, 51, 110);
+  }
+  .option:last-of-type a{
+    border-bottom: 2px solid black;
+  }
+  
+  
+  #main-doc{
+    position: absolute;
+    top:0;
+    left:270px;
+    padding: 20px;
+    text-indent: 2rem;
+  }
+  #main-doc header {
+    font-size: 30px;
+    margin:50px 0 30px auto;
+    text-indent: -0.3rem;
+  }
+  code {
+    display: block;
+    padding: 30px 30px;
+    border-radius: 10px;
+    background-color: gray;
+    text-indent: 0rem;
+  }
+  #main-doc a {
+  color: rgb(11, 51, 110);
+  }
+  @media (max-width:600px) {
+    #navbar{
+      position:static;
+      border:2px solid gray;
+      border-radius: 5px;
+      width: 100%;
+      height:300px;
+      box-sizing: border-box;
+    }
+    #navbar .list .option a {
+      padding-left: 10px;
+    }
+    #navbar .list{
+      overflow-x:hidden;
+      overflow-y:scroll;
+    }
+    #main-doc{
+      position:static;
+    }
+  }

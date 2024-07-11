@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <title>Survey Form - Free code camp!</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <header>
+        <h1 id="title">Quick form!</h1>
+        <p id="description">Feedback form for our course</p>
+    </header>
+    <form id="survey-form">
+        <label id="name-label">
+            Name:
+            <input id="name" name="name" type="text" placeholder="name" required>
+        </label>
+        <label id="email-label">
+            Email:
+            <input id="email" name="name" type="email" placeholder="email" required>
+        </label>
+        <label id="number-label">
+            Age:
+            <input id="number" name="age" type="number" placeholder="age" min="10" max="100">
+        </label>
+        <label id="select-label">
+            Desribe your role:
+            <select id="dropdown" name="role">
+                <option value selected disabled>Select your role</option>
+                <option value="Student">Student</option>
+                <option value="Teacher">Teacher</option>
+                <option value="Professional">Professional</option>
+            </select>
+        </label>
+        <div id="radio-div">
+            Rate the course:
+            <div class="list">
+            <label>
+                <input name="rating" value="awesome" type="radio" checked>Awesome
+            </label>
+            <label>
+                <input name="rating" value="good" type="radio">Good
+            </label>
+            <label>
+                <input name="rating" value="improve" type="radio">Needs improvement
+            </label>
+            </div>
+        </div>
+        <div id="checkbox-div">
+            Select interested domains:
+            <div class="list">
+            <label>
+                <input name="domain" value="frontend" type="checkbox">Frontend
+            </label>
+            <label>
+                <input name="domain" value="backend" type="checkbox">Backend
+            </label>
+            <label>
+                <input name="domain" value="java" type="checkbox">Java
+            </label>
+            <label>
+                <input name="domain" value="Python" type="checkbox">Python
+            </label>
+            </div>
+        </div>
+        <label id="comment-label">
+            Comments or Suggestions:
+            <textarea id="comment" name="comments" placeholder="comments"></textarea>
+        </label>
+        <button type="submit" id="submit">Submit</button>
+    </form>
+</body>
+</html>

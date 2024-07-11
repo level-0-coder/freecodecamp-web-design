@@ -1,0 +1,38 @@
+body, body *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    display:flex;
+    width:100%;
+    justify-content: flex-end;
+    height: 80px;
+    background-color: #0D47A1;
+}
+#navbar{
+    display: flex;
+    gap: 10px;
+    margin-right: 10px;
+}
+#navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #DDE9F5;
+}
+#navbar a p{
+    padding:20px;
+}
+#welcome-section{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  #3F51B5;
+    color: #DDE9F5;
+    font-size: 50px;
+}

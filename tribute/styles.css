@@ -1,0 +1,79 @@
+body {
+    font-size: 20px;
+    background-image: url("https://cdn.pixabay.com/photo/2011/12/14/12/17/galaxy-11098_960_720.jpg");
+    background-position: center;
+    color:rgb(245, 245, 245);
+  }
+  main {
+    margin: 50px auto;
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(145, 145, 137, 0.702);
+    border-radius:10px;
+    box-shadow: 0 0 5px 5px rgba(176, 176, 169, 0.702);
+    width:80%;
+    min-width:500px;
+  }
+  img {
+    width:100%;
+    display: block;
+    max-width:100%;
+    border-radius: 10px;
+  }
+  figcaption{
+    margin: 1rem auto -1rem auto;
+    text-align: center;
+    font-size: 1rem;
+    width: 80%;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  li span{
+    font-weight: bold;
+    margin:0 14px;
+  }
+  #quote {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin:20px auto;
+    border:5px solid rgb(214, 214, 210);
+    border-radius: 20px;
+    padding:30px;
+  }
+  #quote span{
+    text-indent: -0.5rem;
+    font-style: italic;
+  }
+  #tribute{
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  h1{
+    margin-bottom: -10px;
+  }
+  #description{
+    display:block;
+    font-size: 1.4rem;
+    width:100%;
+    text-align: center;
+  }
+  li {
+    margin: 30px auto;
+  }
+  #tribute-link, #tribute-link:visited, #tribute-link:active{
+    color:rgb(62, 84, 242);
+  }
+  .divider{
+    border-radius:5px;
+    width:100%;
+    background-color: rgb(214, 214, 210);
+    height: 5px;
+  }
+  
